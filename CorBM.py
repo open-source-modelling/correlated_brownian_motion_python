@@ -4,6 +4,7 @@ import numpy as np
 def CorBrownian(VarCovar,mu, sampleSize):
 
     def Cholesky(X):
+        # Cholesky–Banachiewicz algorithm
         L = np.zeros_like(X)
         n = X.shape[0]
 
