@@ -15,19 +15,19 @@ Offten when using multifactor models, the model requires correlated sources of n
 ## Solution
 
 The proposed algorithm uses two propoerties of BM:
--  Increments of a BM are normaly distributed
+-  Increments of a BM are normaly distributed.
 -  assuming n independent BM's whose increments are generated from a standard normal distribution (denoted N(0,1)), a derived proces 
 Y = μ + L\*z has its increments distributed as N(μ, E) where μ is the vector of means and L is the square root of the Variance-Covariance matrix (denoted E in the code).
 
 ### Inputs
 
-- Vecor of means for each BM `mu`
-- Variance-Covariance matrix whose diagonal elements describe the volatility of each BM and the off-diagonal elements describe the covariance `E`
-- Number of samples needed `sampleSize`
+- Vecor of means for each BM `mu`.
+- Variance-Covariance matrix whose diagonal elements describe the volatility of each BM and the off-diagonal elements describe the covariance `E`.
+- Number of samples needed `sampleSize`.
 
 ### Output
 
-- Matrix of samples where each column represents a BM and each row a new increment
+- Matrix of samples where each column represents a BM and each row a new increment.
 
 ## Getting started
 
